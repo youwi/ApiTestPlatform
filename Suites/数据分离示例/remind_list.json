@@ -1,0 +1,1043 @@
+{
+  "log": {
+    "version": "1.2",
+    "creator": {
+      "name": "WebInspector",
+      "version": "537.36"
+    },
+    "pages": [],
+    "entries": [
+      {
+        "startedDateTime": "2018-01-18T06:30:45.110Z",
+        "time": 645.7931809742586,
+        "request": {
+          "method": "POST",
+          "url": "http://bi.api.lieluobo.testing/action",
+          "httpVersion": "HTTP/1.1",
+          "headers": [
+            {
+              "name": "Pragma",
+              "value": "no-cache"
+            },
+            {
+              "name": "Origin",
+              "value": "http://www.lieluobo.testing"
+            },
+            {
+              "name": "Accept-Encoding",
+              "value": "gzip, deflate"
+            },
+            {
+              "name": "Host",
+              "value": "bi.api.lieluobo.testing"
+            },
+            {
+              "name": "Accept-Language",
+              "value": "zh-CN,zh;q=0.9"
+            },
+            {
+              "name": "User-Agent",
+              "value": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_2) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36"
+            },
+            {
+              "name": "Content-Type",
+              "value": "text/plain"
+            },
+            {
+              "name": "Accept",
+              "value": "*/*"
+            },
+            {
+              "name": "Cache-Control",
+              "value": "no-cache"
+            },
+            {
+              "name": "Referer",
+              "value": "http://www.lieluobo.testing/resumes"
+            },
+            {
+              "name": "Connection",
+              "value": "keep-alive"
+            },
+            {
+              "name": "Content-Length",
+              "value": "416"
+            }
+          ],
+          "queryString": [],
+          "cookies": [],
+          "headersSize": 464,
+          "bodySize": 382,
+          "postData": {
+            "mimeType": "text/plain",
+            "text": "[{\"action\":\"click_c_resume_group_all\",\"actionName\":\"点击我的候选人\",\"type\":\"click\",\"userId\":204641,\"path\":\"/resumes\",\"title\":\"我的候选人\",\"channel\":\"c\",\"url\":\"http://www.lieluobo.testing/resumes\",\"timeAt\":1516257045108,\"version\":\"2.6.0\",\"deviceId\":\"1da7329f-1aeb-18f1-bc8d-a22d19c8b476\",\"sessionId\":\"91e9f72b-2b9a-91b7-530e-51e1b3950c22\",\"content\":\"{}\",\"module\":\"Resumes\",\"moduleName\":\"我的候选人\"}]"
+          }
+        },
+        "response": {
+          "status": 200,
+          "statusText": "OK",
+          "httpVersion": "HTTP/1.1",
+          "headers": [
+            {
+              "name": "Access-Control-Allow-Origin",
+              "value": "*"
+            },
+            {
+              "name": "Date",
+              "value": "Thu, 18 Jan 2018 06:30:45 GMT"
+            },
+            {
+              "name": "Server",
+              "value": "nginx"
+            },
+            {
+              "name": "Connection",
+              "value": "keep-alive"
+            },
+            {
+              "name": "Content-Length",
+              "value": "21"
+            },
+            {
+              "name": "Content-Type",
+              "value": "application/json"
+            }
+          ],
+          "cookies": [],
+          "content": {
+            "size": 21,
+            "mimeType": "application/json",
+            "compression": 0,
+            "text": "{\"code\":1,\"msg\":\"OK\"}"
+          },
+          "redirectURL": "",
+          "headersSize": 179,
+          "bodySize": 21,
+          "_transferSize": 200
+        },
+        "cache": {},
+        "timings": {
+          "blocked": 612.4181809966105,
+          "dns": -1,
+          "ssl": -1,
+          "connect": -1,
+          "send": 0.09700004011403962,
+          "wait": 29.420999984722243,
+          "receive": 5.856999952811748,
+          "_blocked_queueing": 1.1809999705292284,
+          "_blocked_proxy": 0.8110000053419526
+        },
+        "serverIPAddress": "192.168.8.15",
+        "connection": "494604"
+      },
+      {
+        "startedDateTime": "2018-01-18T06:30:45.229Z",
+        "time": 1052.4572449601255,
+        "request": {
+          "method": "POST",
+          "url": "http://www.lieluobo.testing/api/biz/resume/search?_=1516257045107",
+          "httpVersion": "HTTP/1.1",
+          "headers": [
+            {
+              "name": "Origin",
+              "value": "http://www.lieluobo.testing"
+            },
+            {
+              "name": "Accept-Encoding",
+              "value": "gzip, deflate"
+            },
+            {
+              "name": "X-B3-TraceId",
+              "value": "f164659aaa814bc7"
+            },
+            {
+              "name": "Accept-Language",
+              "value": "zh-CN,zh;q=0.9"
+            },
+            {
+              "name": "authorization",
+              "value": "109e8a26afe340009d710c88ac1a3fb2"
+            },
+            {
+              "name": "Cookie",
+              "value": "bi_token=03e4af0824b54df699bda02b08a06872; _token=109e8a26afe340009d710c88ac1a3fb2; _role=llbc; bms_token=7b06873d40cf4eb1b7df036c5c347d1c; _channel=func"
+            },
+            {
+              "name": "Connection",
+              "value": "keep-alive"
+            },
+            {
+              "name": "channel",
+              "value": "c"
+            },
+            {
+              "name": "Content-Length",
+              "value": "124"
+            },
+            {
+              "name": "Pragma",
+              "value": "no-cache"
+            },
+            {
+              "name": "Host",
+              "value": "www.lieluobo.testing"
+            },
+            {
+              "name": "author",
+              "value": "llbc"
+            },
+            {
+              "name": "User-Agent",
+              "value": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_2) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36"
+            },
+            {
+              "name": "Content-Type",
+              "value": "application/json;charset=UTF-8"
+            },
+            {
+              "name": "Accept",
+              "value": "application/json, text/plain, */*"
+            },
+            {
+              "name": "Cache-Control",
+              "value": "no-cache"
+            },
+            {
+              "name": "X-B3-SpanId",
+              "value": "f164659aaa814bc7"
+            },
+            {
+              "name": "Referer",
+              "value": "http://www.lieluobo.testing/resumes"
+            },
+            {
+              "name": "X-B3-Sampled",
+              "value": "1"
+            }
+          ],
+          "queryString": [
+            {
+              "name": "_",
+              "value": "1516257045107"
+            }
+          ],
+          "cookies": [
+            {
+              "name": "bi_token",
+              "value": "03e4af0824b54df699bda02b08a06872",
+              "expires": null,
+              "httpOnly": false,
+              "secure": false
+            },
+            {
+              "name": "_token",
+              "value": "109e8a26afe340009d710c88ac1a3fb2",
+              "expires": null,
+              "httpOnly": false,
+              "secure": false
+            },
+            {
+              "name": "_role",
+              "value": "llbc",
+              "expires": null,
+              "httpOnly": false,
+              "secure": false
+            },
+            {
+              "name": "bms_token",
+              "value": "7b06873d40cf4eb1b7df036c5c347d1c",
+              "expires": null,
+              "httpOnly": false,
+              "secure": false
+            },
+            {
+              "name": "_channel",
+              "value": "func",
+              "expires": null,
+              "httpOnly": false,
+              "secure": false
+            }
+          ],
+          "headersSize": 860,
+          "bodySize": 124,
+          "postData": {
+            "mimeType": "application/json;charset=UTF-8",
+            "text": "{\"keywords\":\"\",\"attention\":1,\"page\":1,\"size\":10,\"age\":{},\"degrees\":[],\"seniority\":[],\"locations\":[null],\"resumeGroupIds\":[]}"
+          }
+        },
+        "response": {
+          "status": 200,
+          "statusText": "OK",
+          "httpVersion": "HTTP/1.1",
+          "headers": [
+            {
+              "name": "Date",
+              "value": "Thu, 18 Jan 2018 06:30:46 GMT"
+            },
+            {
+              "name": "Content-Encoding",
+              "value": "gzip"
+            },
+            {
+              "name": "Transfer-Encoding",
+              "value": "chunked"
+            },
+            {
+              "name": "Server",
+              "value": "nginx"
+            },
+            {
+              "name": "Connection",
+              "value": "keep-alive"
+            },
+            {
+              "name": "Vary",
+              "value": "Accept-Encoding"
+            },
+            {
+              "name": "Content-Type",
+              "value": "application/json"
+            }
+          ],
+          "cookies": [],
+          "content": {
+            "size": 4436,
+            "mimeType": "application/json",
+            "compression": 3322,
+            "text": "{\"code\":1,\"msg\":\"OK\",\"body\":[{\"id\":18405,\"name\":\"蔚奇\",\"gender\":2,\"mobile\":\"13408304899\",\"currentLocationCode\":310000,\"orgName\":\"又九力巨冈I井毛仓v以E九毛欠二v书尤Y\",\"position\":\"软件测试工程师又九力巨冈I井毛仓v以E九毛欠二v书尤Y\",\"degree\":2,\"seniority\":9,\"age\":8,\"attention\":1,\"remarkCount\":0,\"orderCount\":0,\"jobSearchStatus\":1,\"score\":23,\"createdBy\":204641,\"updatedAt\":\"2018-01-18T06:02:45+08:00\",\"recommendProjectNum\":0,\"matchDegree\":0},{\"id\":18404,\"name\":\"韩伯\",\"gender\":2,\"mobile\":\"13604854742\",\"currentLocationCode\":310000,\"orgName\":\"七RK切乌户互hR户刀瓦D什l从j六牛仍\",\"position\":\"软件测试工程师七RK切乌户互hR户刀瓦D什l从j六牛仍\",\"degree\":2,\"seniority\":10,\"age\":9,\"attention\":1,\"remarkCount\":0,\"orderCount\":0,\"jobSearchStatus\":1,\"score\":23,\"createdBy\":204641,\"updatedAt\":\"2018-01-18T06:02:43+08:00\",\"recommendProjectNum\":0,\"matchDegree\":0},{\"id\":18403,\"name\":\"皮琼筠5\",\"gender\":1,\"mobile\":\"15602281418\",\"currentLocationCode\":310000,\"orgName\":\"$string武汉墨兴网络科技有限公司\",\"position\":\"$string目前职位\",\"degree\":1,\"seniority\":4,\"age\":4,\"attention\":1,\"remarkCount\":0,\"orderCount\":0,\"jobSearchStatus\":2,\"score\":72,\"createdBy\":204641,\"updatedAt\":\"2018-01-18T06:02:42+08:00\",\"recommendProjectNum\":0,\"matchDegree\":0},{\"id\":18402,\"name\":\"东婉\",\"gender\":2,\"mobile\":\"13200294597\",\"currentLocationCode\":310000,\"orgName\":\"切五不E力办G几斗介犬五分车夫E火乃V无\",\"position\":\"软件测试工程师切五不E力办G几斗介犬五分车夫E火乃V无\",\"degree\":2,\"seniority\":6,\"age\":5,\"attention\":1,\"remarkCount\":0,\"orderCount\":0,\"jobSearchStatus\":1,\"score\":23,\"createdBy\":204641,\"updatedAt\":\"2018-01-18T06:02:41+08:00\",\"recommendProjectNum\":0,\"matchDegree\":0},{\"id\":18401,\"name\":\"左翰\",\"gender\":2,\"mobile\":\"15206982156\",\"currentLocationCode\":310000,\"orgName\":\"爪EsSb币见予中氏冈a欠5牙t毛介认乏\",\"position\":\"软件测试工程师爪EsSb币见予中氏冈a欠5牙t毛介认乏\",\"degree\":2,\"seniority\":3,\"age\":3,\"attention\":1,\"remarkCount\":0,\"orderCount\":0,\"jobSearchStatus\":1,\"score\":23,\"createdBy\":204641,\"updatedAt\":\"2018-01-18T06:02:39+08:00\",\"recommendProjectNum\":0,\"matchDegree\":0},{\"id\":18400,\"name\":\"宋珊\",\"gender\":2,\"mobile\":\"13407652213\",\"currentLocationCode\":310000,\"orgName\":\"元I父刀丁分TTP厂内厅K瓦7日iR元扎\",\"position\":\"软件测试工程师元I父刀丁分TTP厂内厅K瓦7日iR元扎\",\"degree\":2,\"seniority\":5,\"age\":5,\"attention\":1,\"remarkCount\":0,\"orderCount\":0,\"jobSearchStatus\":1,\"score\":23,\"createdBy\":204641,\"updatedAt\":\"2018-01-18T06:02:37+08:00\",\"recommendProjectNum\":0,\"matchDegree\":0},{\"id\":18399,\"name\":\"阳纨\",\"gender\":2,\"mobile\":\"15800564807\",\"currentLocationCode\":310000,\"orgName\":\"m力仅O予反仁y比m从凤T日L仁认A户G\",\"position\":\"软件测试工程师m力仅O予反仁y比m从凤T日L仁认A户G\",\"degree\":2,\"seniority\":1,\"age\":1,\"attention\":1,\"remarkCount\":0,\"orderCount\":0,\"jobSearchStatus\":1,\"score\":23,\"createdBy\":204641,\"updatedAt\":\"2018-01-18T06:02:36+08:00\",\"recommendProjectNum\":0,\"matchDegree\":0},{\"id\":18395,\"name\":\"贡羽\",\"gender\":2,\"mobile\":\"13204648329\",\"currentLocationCode\":310000,\"orgName\":\"勿少予无5六牛了化Xr日巨vz5斤互文乏\",\"position\":\"软件测试工程师勿少予无5六牛了化Xr日巨vz5斤互文乏\",\"degree\":2,\"seniority\":3,\"age\":3,\"attention\":1,\"remarkCount\":0,\"orderCount\":0,\"jobSearchStatus\":1,\"score\":23,\"createdBy\":204641,\"updatedAt\":\"2018-01-17T06:02:36+08:00\",\"recommendProjectNum\":0,\"matchDegree\":0},{\"id\":18394,\"name\":\"福珊岚\",\"gender\":2,\"mobile\":\"15605197217\",\"currentLocationCode\":310000,\"orgName\":\"人六丁片丑手计l卜d丹仇卜乃3T巨户M水\",\"position\":\"软件测试工程师人六丁片丑手计l卜d丹仇卜乃3T巨户M水\",\"degree\":2,\"seniority\":3,\"age\":2,\"attention\":1,\"remarkCount\":0,\"orderCount\":0,\"jobSearchStatus\":1,\"score\":23,\"createdBy\":204641,\"updatedAt\":\"2018-01-17T06:02:35+08:00\",\"recommendProjectNum\":0,\"matchDegree\":0},{\"id\":18393,\"name\":\"乔莲菁10\",\"gender\":1,\"mobile\":\"13205767870\",\"currentLocationCode\":310000,\"orgName\":\"$string武汉墨兴网络科技有限公司\",\"position\":\"$string目前职位\",\"degree\":1,\"seniority\":4,\"age\":3,\"attention\":1,\"remarkCount\":0,\"orderCount\":0,\"jobSearchStatus\":1,\"score\":74,\"createdBy\":204641,\"updatedAt\":\"2018-01-17T14:33:16+08:00\",\"recommendProjectNum\":0,\"matchDegree\":0}],\"meta\":{\"pagination\":{\"page\":1,\"size\":10,\"total\":466,\"totalPages\":47}}}"
+          },
+          "redirectURL": "",
+          "headersSize": 202,
+          "bodySize": 1114,
+          "_transferSize": 1316
+        },
+        "cache": {},
+        "timings": {
+          "blocked": 926.8922449867238,
+          "dns": -1,
+          "ssl": -1,
+          "connect": -1,
+          "send": 0.1809999812400065,
+          "wait": 99.4119999813845,
+          "receive": 27.972000010777265,
+          "_blocked_queueing": 27.24500000476837,
+          "_blocked_proxy": 1.1550000053830445
+        },
+        "serverIPAddress": "192.168.8.15",
+        "connection": "494610"
+      },
+      {
+        "startedDateTime": "2018-01-18T06:30:46.334Z",
+        "time": 4656.747554979462,
+        "request": {
+          "method": "POST",
+          "url": "http://www.lieluobo.testing/api/biz/project/recommendProjectsMetaInfo?_=1516257046289",
+          "httpVersion": "HTTP/1.1",
+          "headers": [
+            {
+              "name": "Origin",
+              "value": "http://www.lieluobo.testing"
+            },
+            {
+              "name": "Accept-Encoding",
+              "value": "gzip, deflate"
+            },
+            {
+              "name": "X-B3-TraceId",
+              "value": "3ad175ba7fcad318"
+            },
+            {
+              "name": "Accept-Language",
+              "value": "zh-CN,zh;q=0.9"
+            },
+            {
+              "name": "authorization",
+              "value": "109e8a26afe340009d710c88ac1a3fb2"
+            },
+            {
+              "name": "Cookie",
+              "value": "bi_token=03e4af0824b54df699bda02b08a06872; _token=109e8a26afe340009d710c88ac1a3fb2; _role=llbc; bms_token=7b06873d40cf4eb1b7df036c5c347d1c; _channel=func"
+            },
+            {
+              "name": "Connection",
+              "value": "keep-alive"
+            },
+            {
+              "name": "channel",
+              "value": "c"
+            },
+            {
+              "name": "Content-Length",
+              "value": "95"
+            },
+            {
+              "name": "Pragma",
+              "value": "no-cache"
+            },
+            {
+              "name": "Host",
+              "value": "www.lieluobo.testing"
+            },
+            {
+              "name": "author",
+              "value": "llbc"
+            },
+            {
+              "name": "User-Agent",
+              "value": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_2) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36"
+            },
+            {
+              "name": "Content-Type",
+              "value": "application/json;charset=UTF-8"
+            },
+            {
+              "name": "Accept",
+              "value": "application/json, text/plain, */*"
+            },
+            {
+              "name": "Cache-Control",
+              "value": "no-cache"
+            },
+            {
+              "name": "X-B3-SpanId",
+              "value": "3ad175ba7fcad318"
+            },
+            {
+              "name": "Referer",
+              "value": "http://www.lieluobo.testing/resumes"
+            },
+            {
+              "name": "X-B3-Sampled",
+              "value": "1"
+            }
+          ],
+          "queryString": [
+            {
+              "name": "_",
+              "value": "1516257046289"
+            }
+          ],
+          "cookies": [
+            {
+              "name": "bi_token",
+              "value": "03e4af0824b54df699bda02b08a06872",
+              "expires": null,
+              "httpOnly": false,
+              "secure": false
+            },
+            {
+              "name": "_token",
+              "value": "109e8a26afe340009d710c88ac1a3fb2",
+              "expires": null,
+              "httpOnly": false,
+              "secure": false
+            },
+            {
+              "name": "_role",
+              "value": "llbc",
+              "expires": null,
+              "httpOnly": false,
+              "secure": false
+            },
+            {
+              "name": "bms_token",
+              "value": "7b06873d40cf4eb1b7df036c5c347d1c",
+              "expires": null,
+              "httpOnly": false,
+              "secure": false
+            },
+            {
+              "name": "_channel",
+              "value": "func",
+              "expires": null,
+              "httpOnly": false,
+              "secure": false
+            }
+          ],
+          "headersSize": 879,
+          "bodySize": 95,
+          "postData": {
+            "mimeType": "application/json;charset=UTF-8",
+            "text": "{\"resumeIds\":[\"18405\",\"18404\",\"18403\",\"18402\",\"18401\",\"18400\",\"18399\",\"18395\",\"18394\",\"18393\"]}"
+          }
+        },
+        "response": {
+          "status": 200,
+          "statusText": "OK",
+          "httpVersion": "HTTP/1.1",
+          "headers": [
+            {
+              "name": "Date",
+              "value": "Thu, 18 Jan 2018 06:30:50 GMT"
+            },
+            {
+              "name": "Server",
+              "value": "nginx"
+            },
+            {
+              "name": "Connection",
+              "value": "keep-alive"
+            },
+            {
+              "name": "Content-Length",
+              "value": "700"
+            },
+            {
+              "name": "Content-Type",
+              "value": "application/json"
+            }
+          ],
+          "cookies": [],
+          "content": {
+            "size": 700,
+            "mimeType": "application/json",
+            "compression": 0,
+            "text": "{\"code\":1,\"msg\":\"OK\",\"body\":[{\"resumeId\":18405,\"recommend\":0,\"newRecommend\":0,\"recommendNum\":0},{\"resumeId\":18404,\"recommend\":0,\"newRecommend\":0,\"recommendNum\":0},{\"resumeId\":18403,\"recommend\":0,\"newRecommend\":0,\"recommendNum\":0},{\"resumeId\":18402,\"recommend\":0,\"newRecommend\":0,\"recommendNum\":0},{\"resumeId\":18401,\"recommend\":0,\"newRecommend\":0,\"recommendNum\":0},{\"resumeId\":18400,\"recommend\":0,\"newRecommend\":0,\"recommendNum\":0},{\"resumeId\":18399,\"recommend\":0,\"newRecommend\":0,\"recommendNum\":0},{\"resumeId\":18395,\"recommend\":0,\"newRecommend\":0,\"recommendNum\":0},{\"resumeId\":18394,\"recommend\":0,\"newRecommend\":0,\"recommendNum\":0},{\"resumeId\":18393,\"recommend\":0,\"newRecommend\":0,\"recommendNum\":0}]}"
+          },
+          "redirectURL": "",
+          "headersSize": 148,
+          "bodySize": 700,
+          "_transferSize": 848
+        },
+        "cache": {},
+        "timings": {
+          "blocked": 569.6725550123379,
+          "dns": -1,
+          "ssl": -1,
+          "connect": -1,
+          "send": 0.08899997919797897,
+          "wait": 4086.794000002555,
+          "receive": 2.191999985370785,
+          "_blocked_queueing": 0.5549999768845737,
+          "_blocked_proxy": 1.7740000039340202
+        },
+        "serverIPAddress": "192.168.8.15",
+        "connection": "494610"
+      },
+      {
+        "startedDateTime": "2018-01-18T06:30:46.755Z",
+        "time": 611.233502981835,
+        "request": {
+          "method": "OPTIONS",
+          "url": "https://tracing.lieluobo.com/api/v1/spans",
+          "httpVersion": "HTTP/1.1",
+          "headers": [
+            {
+              "name": "Pragma",
+              "value": "no-cache"
+            },
+            {
+              "name": "Access-Control-Request-Method",
+              "value": "POST"
+            },
+            {
+              "name": "Origin",
+              "value": "http://www.lieluobo.testing"
+            },
+            {
+              "name": "Accept-Encoding",
+              "value": "gzip, deflate, br"
+            },
+            {
+              "name": "Host",
+              "value": "tracing.lieluobo.com"
+            },
+            {
+              "name": "Accept-Language",
+              "value": "zh-CN,zh;q=0.9"
+            },
+            {
+              "name": "User-Agent",
+              "value": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_2) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36"
+            },
+            {
+              "name": "Accept",
+              "value": "*/*"
+            },
+            {
+              "name": "Cache-Control",
+              "value": "no-cache"
+            },
+            {
+              "name": "Referer",
+              "value": "http://www.lieluobo.testing/resumes"
+            },
+            {
+              "name": "Connection",
+              "value": "keep-alive"
+            },
+            {
+              "name": "Access-Control-Request-Headers",
+              "value": "content-type"
+            }
+          ],
+          "queryString": [],
+          "cookies": [],
+          "headersSize": 510,
+          "bodySize": 0
+        },
+        "response": {
+          "status": 200,
+          "statusText": "",
+          "httpVersion": "HTTP/1.1",
+          "headers": [
+            {
+              "name": "Date",
+              "value": "Thu, 18 Jan 2018 06:30:47 GMT"
+            },
+            {
+              "name": "Vary",
+              "value": "Origin"
+            },
+            {
+              "name": "Allow",
+              "value": "GET, HEAD, POST, PUT, DELETE, OPTIONS, PATCH"
+            },
+            {
+              "name": "Access-Control-Allow-Methods",
+              "value": "POST"
+            },
+            {
+              "name": "Access-Control-Allow-Origin",
+              "value": "http://www.lieluobo.testing"
+            },
+            {
+              "name": "Access-Control-Allow-Credentials",
+              "value": "true"
+            },
+            {
+              "name": "Connection",
+              "value": "keep-alive"
+            },
+            {
+              "name": "Access-Control-Allow-Headers",
+              "value": "content-type"
+            },
+            {
+              "name": "Content-Length",
+              "value": "0"
+            },
+            {
+              "name": "X-Application-Context",
+              "value": "zipkin-server:shared:9411"
+            }
+          ],
+          "cookies": [],
+          "content": {
+            "size": 0,
+            "mimeType": "text/plain",
+            "compression": -1,
+            "text": ""
+          },
+          "redirectURL": "",
+          "headersSize": 391,
+          "bodySize": 1,
+          "_transferSize": 392
+        },
+        "cache": {},
+        "timings": {
+          "blocked": 602.2055030028574,
+          "dns": -1,
+          "ssl": -1,
+          "connect": -1,
+          "send": 0.1850000116969568,
+          "wait": 9.628999978303796,
+          "receive": 1.213999988976866,
+          "_blocked_queueing": 0.5029999883845448,
+          "_blocked_proxy": 0.3799999831250034
+        },
+        "serverIPAddress": "111.231.152.237",
+        "connection": "494621"
+      },
+      {
+        "startedDateTime": "2018-01-18T06:30:47.369Z",
+        "time": 522.2315209885128,
+        "request": {
+          "method": "POST",
+          "url": "https://tracing.lieluobo.com/api/v1/spans",
+          "httpVersion": "HTTP/1.1",
+          "headers": [
+            {
+              "name": "Pragma",
+              "value": "no-cache"
+            },
+            {
+              "name": "Origin",
+              "value": "http://www.lieluobo.testing"
+            },
+            {
+              "name": "Accept-Encoding",
+              "value": "gzip, deflate, br"
+            },
+            {
+              "name": "Host",
+              "value": "tracing.lieluobo.com"
+            },
+            {
+              "name": "Accept-Language",
+              "value": "zh-CN,zh;q=0.9"
+            },
+            {
+              "name": "User-Agent",
+              "value": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_2) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36"
+            },
+            {
+              "name": "Content-Type",
+              "value": "application/json"
+            },
+            {
+              "name": "Accept",
+              "value": "application/json"
+            },
+            {
+              "name": "Cache-Control",
+              "value": "no-cache"
+            },
+            {
+              "name": "Referer",
+              "value": "http://www.lieluobo.testing/resumes"
+            },
+            {
+              "name": "Connection",
+              "value": "keep-alive"
+            },
+            {
+              "name": "Content-Length",
+              "value": "473"
+            }
+          ],
+          "queryString": [],
+          "cookies": [],
+          "headersSize": 490,
+          "bodySize": 473,
+          "postData": {
+            "mimeType": "application/json",
+            "text": "[{\"traceId\":\"f164659aaa814bc7\",\"id\":\"f164659aaa814bc7\",\"name\":\"post\",\"timestamp\":1516257045107000,\"duration\":1178000,\"annotations\":[{\"value\":\"cs\",\"timestamp\":1516257045107000,\"endpoint\":{\"serviceName\":\"c.fe\"}},{\"value\":\"cr\",\"timestamp\":1516257046285000,\"endpoint\":{\"serviceName\":\"c.fe\"}}],\"binaryAnnotations\":[{\"key\":\"http.url\",\"value\":\"/api/biz/resume/search\",\"endpoint\":{\"serviceName\":\"c.fe\"}},{\"key\":\"http.status_code\",\"value\":\"200\",\"endpoint\":{\"serviceName\":\"c.fe\"}}]}]"
+          }
+        },
+        "response": {
+          "status": 202,
+          "statusText": "",
+          "httpVersion": "HTTP/1.1",
+          "headers": [
+            {
+              "name": "Access-Control-Allow-Origin",
+              "value": "http://www.lieluobo.testing"
+            },
+            {
+              "name": "Date",
+              "value": "Thu, 18 Jan 2018 06:30:47 GMT"
+            },
+            {
+              "name": "Access-Control-Allow-Credentials",
+              "value": "true"
+            },
+            {
+              "name": "Connection",
+              "value": "keep-alive"
+            },
+            {
+              "name": "Content-Length",
+              "value": "0"
+            },
+            {
+              "name": "Vary",
+              "value": "Origin"
+            },
+            {
+              "name": "X-Application-Context",
+              "value": "zipkin-server:shared:9411"
+            }
+          ],
+          "cookies": [],
+          "content": {
+            "size": 0,
+            "mimeType": "text/plain",
+            "compression": -1,
+            "text": ""
+          },
+          "redirectURL": "",
+          "headersSize": 258,
+          "bodySize": 1,
+          "_transferSize": 259
+        },
+        "cache": {},
+        "timings": {
+          "blocked": 512.460520998109,
+          "dns": -1,
+          "ssl": -1,
+          "connect": -1,
+          "send": 0.09699998190603765,
+          "wait": 10.204999998677863,
+          "receive": 1.4690000098198652,
+          "_blocked_queueing": 0.5210000090301037,
+          "_blocked_proxy": 0.3359999973330332
+        },
+        "serverIPAddress": "111.231.152.237",
+        "connection": "494621"
+      },
+      {
+        "startedDateTime": "2018-01-18T06:30:51.755Z",
+        "time": 488.8189459911082,
+        "request": {
+          "method": "OPTIONS",
+          "url": "https://tracing.lieluobo.com/api/v1/spans",
+          "httpVersion": "HTTP/1.1",
+          "headers": [
+            {
+              "name": "Pragma",
+              "value": "no-cache"
+            },
+            {
+              "name": "Access-Control-Request-Method",
+              "value": "POST"
+            },
+            {
+              "name": "Origin",
+              "value": "http://www.lieluobo.testing"
+            },
+            {
+              "name": "Accept-Encoding",
+              "value": "gzip, deflate, br"
+            },
+            {
+              "name": "Host",
+              "value": "tracing.lieluobo.com"
+            },
+            {
+              "name": "Accept-Language",
+              "value": "zh-CN,zh;q=0.9"
+            },
+            {
+              "name": "User-Agent",
+              "value": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_2) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36"
+            },
+            {
+              "name": "Accept",
+              "value": "*/*"
+            },
+            {
+              "name": "Cache-Control",
+              "value": "no-cache"
+            },
+            {
+              "name": "Referer",
+              "value": "http://www.lieluobo.testing/resumes"
+            },
+            {
+              "name": "Connection",
+              "value": "keep-alive"
+            },
+            {
+              "name": "Access-Control-Request-Headers",
+              "value": "content-type"
+            }
+          ],
+          "queryString": [],
+          "cookies": [],
+          "headersSize": 510,
+          "bodySize": 0
+        },
+        "response": {
+          "status": 200,
+          "statusText": "",
+          "httpVersion": "HTTP/1.1",
+          "headers": [
+            {
+              "name": "Date",
+              "value": "Thu, 18 Jan 2018 06:30:52 GMT"
+            },
+            {
+              "name": "Vary",
+              "value": "Origin"
+            },
+            {
+              "name": "Allow",
+              "value": "GET, HEAD, POST, PUT, DELETE, OPTIONS, PATCH"
+            },
+            {
+              "name": "Access-Control-Allow-Methods",
+              "value": "POST"
+            },
+            {
+              "name": "Access-Control-Allow-Origin",
+              "value": "http://www.lieluobo.testing"
+            },
+            {
+              "name": "Access-Control-Allow-Credentials",
+              "value": "true"
+            },
+            {
+              "name": "Connection",
+              "value": "keep-alive"
+            },
+            {
+              "name": "Access-Control-Allow-Headers",
+              "value": "content-type"
+            },
+            {
+              "name": "Content-Length",
+              "value": "0"
+            },
+            {
+              "name": "X-Application-Context",
+              "value": "zipkin-server:shared:9411"
+            }
+          ],
+          "cookies": [],
+          "content": {
+            "size": 0,
+            "mimeType": "text/plain",
+            "compression": -1,
+            "text": ""
+          },
+          "redirectURL": "",
+          "headersSize": 391,
+          "bodySize": 1,
+          "_transferSize": 392
+        },
+        "cache": {},
+        "timings": {
+          "blocked": 476.9619460075626,
+          "dns": -1,
+          "ssl": -1,
+          "connect": -1,
+          "send": 0.3120000474160065,
+          "wait": 11.719999951310172,
+          "receive": 1.824999984819442,
+          "_blocked_queueing": 0.9459999855607748,
+          "_blocked_proxy": 0.45299995690601236
+        },
+        "serverIPAddress": "111.231.152.237",
+        "connection": "494621"
+      },
+      {
+        "startedDateTime": "2018-01-18T06:30:52.247Z",
+        "time": 424.9851170197362,
+        "request": {
+          "method": "POST",
+          "url": "https://tracing.lieluobo.com/api/v1/spans",
+          "httpVersion": "HTTP/1.1",
+          "headers": [
+            {
+              "name": "Pragma",
+              "value": "no-cache"
+            },
+            {
+              "name": "Origin",
+              "value": "http://www.lieluobo.testing"
+            },
+            {
+              "name": "Accept-Encoding",
+              "value": "gzip, deflate, br"
+            },
+            {
+              "name": "Host",
+              "value": "tracing.lieluobo.com"
+            },
+            {
+              "name": "Accept-Language",
+              "value": "zh-CN,zh;q=0.9"
+            },
+            {
+              "name": "User-Agent",
+              "value": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_2) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36"
+            },
+            {
+              "name": "Content-Type",
+              "value": "application/json"
+            },
+            {
+              "name": "Accept",
+              "value": "application/json"
+            },
+            {
+              "name": "Cache-Control",
+              "value": "no-cache"
+            },
+            {
+              "name": "Referer",
+              "value": "http://www.lieluobo.testing/resumes"
+            },
+            {
+              "name": "Connection",
+              "value": "keep-alive"
+            },
+            {
+              "name": "Content-Length",
+              "value": "493"
+            }
+          ],
+          "queryString": [],
+          "cookies": [],
+          "headersSize": 490,
+          "bodySize": 493,
+          "postData": {
+            "mimeType": "application/json",
+            "text": "[{\"traceId\":\"3ad175ba7fcad318\",\"id\":\"3ad175ba7fcad318\",\"name\":\"post\",\"timestamp\":1516257046289000,\"duration\":4705000,\"annotations\":[{\"value\":\"cs\",\"timestamp\":1516257046289000,\"endpoint\":{\"serviceName\":\"c.fe\"}},{\"value\":\"cr\",\"timestamp\":1516257050994000,\"endpoint\":{\"serviceName\":\"c.fe\"}}],\"binaryAnnotations\":[{\"key\":\"http.url\",\"value\":\"/api/biz/project/recommendProjectsMetaInfo\",\"endpoint\":{\"serviceName\":\"c.fe\"}},{\"key\":\"http.status_code\",\"value\":\"200\",\"endpoint\":{\"serviceName\":\"c.fe\"}}]}]"
+          }
+        },
+        "response": {
+          "status": 202,
+          "statusText": "",
+          "httpVersion": "HTTP/1.1",
+          "headers": [
+            {
+              "name": "Access-Control-Allow-Origin",
+              "value": "http://www.lieluobo.testing"
+            },
+            {
+              "name": "Date",
+              "value": "Thu, 18 Jan 2018 06:30:52 GMT"
+            },
+            {
+              "name": "Access-Control-Allow-Credentials",
+              "value": "true"
+            },
+            {
+              "name": "Connection",
+              "value": "keep-alive"
+            },
+            {
+              "name": "Content-Length",
+              "value": "0"
+            },
+            {
+              "name": "Vary",
+              "value": "Origin"
+            },
+            {
+              "name": "X-Application-Context",
+              "value": "zipkin-server:shared:9411"
+            }
+          ],
+          "cookies": [],
+          "content": {
+            "size": 0,
+            "mimeType": "text/plain",
+            "compression": -1,
+            "text": ""
+          },
+          "redirectURL": "",
+          "headersSize": 258,
+          "bodySize": 1,
+          "_transferSize": 259
+        },
+        "cache": {},
+        "timings": {
+          "blocked": 415.96111701300805,
+          "dns": -1,
+          "ssl": -1,
+          "connect": -1,
+          "send": 0.08899997919803582,
+          "wait": 8.788000035565574,
+          "receive": 2.146999991964549,
+          "_blocked_queueing": 1.117000007070601,
+          "_blocked_proxy": 0.31500001205199624
+        },
+        "serverIPAddress": "111.231.152.237",
+        "connection": "494621"
+      }
+    ]
+  }
+}

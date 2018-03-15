@@ -1,0 +1,7 @@
+#python:
+venv
+.idea
+.idea/*
+Suites/__pycache__/
+.cache
+Reports

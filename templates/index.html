@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>API Test tool</title>
+    <link rel="stylesheet" type="text/css" href="/templates/bootstrap.min.css" media="screen">
+    <link rel="stylesheet" type="text/css" href="/templates/icono.min.css" media="screen">
+    <link rel="stylesheet" type="text/css" href="/templates/style.css" media="screen">
+    <link rel="stylesheet" type="text/css" href="/templates/toastr.min.css" media="screen">
+    <link rel="stylesheet" type="text/css" href="/templates/jquery.loading.min.css" media="screen">
+    <link rel="stylesheet" type="text/css" href="/templates/imgbox.css" media="screen">
+    <link rel="stylesheet" type="text/css" href="/templates/sidr.dark.css" media="screen">
+    <link rel="stylesheet" type="text/css" href="/templates/tooltipster.main.css" media="screen">
+
+
+    <link rel="shortcut icon" href="/templates/images/favicon.png" type="image/x-icon"/>
+</head>
+<body class="{{state}}">
+<div class="main">
+    <div class="status" id="status">
+        <nav class="menu">
+            <ul class="tabs container">
+
+                <li><a href="#" class="current" id="tab_suites_div">Suites</a></li>
+                <li><a href="#" class="chart-tab-link" id="tab_reports_div">Reports</a></li>
+                <li><a href="#">LoadTest</a></li>
+                <li><a href="#">LoadTest Reports</a></li>
+                <li><span class="sp-area-left2">
+                    <a class="sp-button2" id="simple-menu2">Sms</a>
+                </span>
+                </li>
+                <span class="sp-area">
+                    <span>
+                    <a class="sp-button" id="toRunTestCases">RunAll</a>
+                    <a class="sp-button" id="toUpdateTestCases">Update</a>
+                    </span>
+                </span>
+            </ul>
+        </nav>
+        <div class="panes container">
+            <div style="display:none;">
+                <table id="stats" class="stats">
+                    <thead>
+                    <tr>
+                        <th class="stats_label" href="#" data-sortkey="method">Type</th>
+                        <th class="stats_label" href="#" data-sortkey="name">Name</th>
+                        <th class="stats_label numeric" href="#" data-sortkey="num_requests"
+                            title="Number of successful requests"># requests
+                        </th>
+                        <th class="stats_label numeric" href="#" data-sortkey="num_failures" title="Number of failures">
+                            # fails
+                        </th>
+                        <th class="stats_label numeric" href="#" data-sortkey="median_response_time"
+                            title="Median response time">Median (ms)
+                        </th>
+                        <th class="stats_label numeric" href="#" data-sortkey="avg_response_time"
+                            title="Average response time">Average (ms)
+                        </th>
+                        <th class="stats_label numeric" href="#" data-sortkey="min_response_time"
+                            title="Min response time">Min (ms)
+                        </th>
+                        <th class="stats_label numeric" href="#" data-sortkey="max_response_time"
+                            title="Max response time">Max (ms)
+                        </th>
+                        <th class="stats_label numeric" href="#" data-sortkey="avg_content_length"
+                            title="Average response size">Content Size
+                        </th>
+                        <th class="stats_label numeric" href="#" data-sortkey="current_rps"
+                            title="Current number of requests per second"># reqs/sec
+                        </th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    </tbody>
+                </table>
+            </div>
+            <div id="charts" style="display:none;">
+                <div class="charts-container"></div>
+                <p class="note">Note: There is no persistence of these charts, if you refresh this page, new charts will
+                    be created.</p>
+            </div>
+            <div style="display:none;">
+                <table id="errors" class="stats">
+                    <thead>
+                    <th class="error_count stats_label" data-sortkey="1"># fails</th>
+                    <th class="stats_label" href="#" data-sortkey="method">Method</th>
+                    <th class="stats_label" href="#" data-sortkey="name">Name</th>
+                    <th class="error_type stats_label" data-sortkey="0">Type</th>
+                    </thead>
+                    <tbody>
+                    </tbody>
+                </table>
+            </div>
+            <div style="display:none;">
+                <table id="exceptions" class="stats">
+                    <thead>
+                    <th class="exception_occurences stats_label" data-sortkey="1"># occurences</th>
+                    <th class="exception_traceback stats_label" data-sortkey="0">Traceback</th>
+                    </thead>
+                    <tbody>
+                    </tbody>
+                </table>
+            </div>
+            <div style="display:none;">
+                <div style="margin-top:20px;">
+                    <a href="/stats/requests/csv">Download request statistics CSV</a><br>
+                    <a href="/stats/distribution/csv">Download response time distribution CSV</a><br>
+                    <a href="/exceptions/csv">Download exceptions CSV</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="sidr">
+        <!-- Your content -->
+        <ul>
+            <li><a href="#" id="random-resume-a">随机上传候选人</a></li>
+            <li><a href="#" id="project-a">职位ID解密</a></li>
+            <li><a href="#" id="sms-a">短信查询</a></li>
+        </ul>
+    </div>
+    <div class="panels">
+        <div id="suites_div"></div>
+        <div id="report_div"></div>
+        <div id="load_div"></div>
+        <div id="load_report_div"></div>
+        <div id="menu_div">
+
+            <button class="icono-sync button-mini" id="sql-table-button"></button>
+            <div id="sql-table-div" class="stats"></div>
+
+
+        </div>
+
+        {{ reports }}
+    </div>
+    <div class="about" style="display:none;">
+        <div style="position:relative;">
+            <a href="#" class="close_link" onclick="$('.about').fadeOut();">Close</a>
+        </div>
+        <div class="padder">
+            <h1>About</h1>
+            <p>
+                API test by haolie test
+            </p>
+            <p>
+            </p>
+
+            <h1>License</h1>
+            <h1>Version</h1>
+            {{version}}<br>
+            <a href="http://xxx.io/">http://xxx.io</a>
+        </div>
+    </div>
+</div>
+<nav class="footer">
+    <div class="container">
+        <a href="#" onclick="$('.about').fadeIn();">About</a>
+    </div>
+</nav>
+<script src="templates/jquery-1.11.3.min.js"></script>
+<script src="templates/toastr.min.js"></script>
+<script src="templates/jquery.loading.min.js"></script>
+<script src="templates/jquery.imgbox.js"></script>
+<script src="templates/jquery.sidr.js"></script>
+<script src="templates/jquery.tools.min.js"></script>
+<script src="templates/bootstrap.min.js"></script>
+<script src="templates/tooltipster.bundle.min.js"></script>
+
+
+<script src="templates/table.js"></script>
+
+<script src="templates/index.js"></script>
+
+</body>
+
+<script>
+</script>
+
+</body>
+</html>
