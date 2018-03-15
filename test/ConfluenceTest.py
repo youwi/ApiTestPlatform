@@ -15,12 +15,12 @@ data = {
     "space": {"key": "QA"},
     "body": {
         "storage": {
-            "value": "<p>汉字This is a new page</p><ul class='inline-task-list'><li data-inline-task-id=''>这是一条任务&nbsp;<a class='confluence-link' data-base-url='http://conf.jihui.in' data-linked-resource-id='5277116' data-linked-resource-type='userinfo' href='http://conf.jihui.in/display/~yuzc' data-linked-resource-default-alias='余珍成'>余珍成</a></li></ul>",
+            "value": "fasfasf",
             "representation": "storage"
         }
     }
 }
 
-resp = requests.post("http://conf.jihui.in/rest/api/content/", json=data, auth=('yuzc', 'yuzc@1Ab'))
+resp = requests.post("http://192.168.1.1/rest/api/content/", json=data, auth=('xxx', 'xxxx'))
 
 print(resp)

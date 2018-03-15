@@ -19,16 +19,16 @@ app.root_path = os.path.dirname(os.path.abspath(__file__))
 HOST = "0.0.0.0"
 PORT = 9094
 INFO = "Test Report on " + HOST + ":" + str(PORT)
-UPDATE_SHELL = "xxxxxx"
+UPDATE_SHELL = "----"
 HTML_RUN_SHELL = 'pytest --html="Reports/report-`date +%Y-%m-%d`.html"'
 XML_RUN_SHELL = 'pytest --junitxml="Reports/report-`date +%Y-%m-%d`.xml"'
 RUN_SHELL = 'pytest --html="Reports/report-`date +%Y-%m-%d`.html" --junitxml="Reports/report-`date +%Y-%m-%d`.xml"'
 
 MYSQL_HOST = "192.168.8.13"
-MYSQL_DB_NAME = "111"
-MYSQL_USER_NAME = "111"
-MYSQL_USER_PWD = "111111"
-SMS_SQL = "select  from xxxx order by id desc limit 25"
+MYSQL_DB_NAME = "xxxxxxx.com"
+MYSQL_USER_NAME = "123123123"
+MYSQL_USER_PWD = "xxxxxxx.com123"
+SMS_SQL = "select * from tablexxx order by id desc limit 25"
 
 class CJsonEncoder(json.JSONEncoder):
     def default(self, obj):
@@ -140,13 +140,13 @@ def walk_reports():
 def walk_suites():
     if CACHE['reports']:
         return CACHE['reports']
-    cpath = os.path.dirname(os.path.abspath(__file__)) + "/TestSuites"
+    cpath = os.path.dirname(os.path.abspath(__file__)) + "/Suites"
     dir = os.scandir(cpath)
     file_list = []
     for root, dirs, files in dir:
         for filepath in files:
             new_path = root.replace(cpath, "")
-            file_list.append("TestSuites/" + os.path.join(new_path, filepath))
+            file_list.append("Suites/" + os.path.join(new_path, filepath))
     # file_list = os.listdir(os.path.dirname(os.path.abspath(__file__)) + "/Reports")
     response = make_response(json.dumps(file_list))
     response.headers["Content-type"] = "application/json"
@@ -176,14 +176,14 @@ def suite_list(name=None):
     获取文件列表按路径直接取出来
     """
     time.sleep(0.1)
-    cpath = os.path.dirname(os.path.abspath(__file__)) + "/TestSuites"
+    cpath = os.path.dirname(os.path.abspath(__file__)) + "/Suites"
     dir = os.walk(cpath)
 
     file_list = []
     for root, dirs, files in dir:
         for filepath in files:
             new_path = root.replace(cpath, "")
-            file_list.append("TestSuites/" + os.path.join(new_path, filepath))
+            file_list.append("Suites/" + os.path.join(new_path, filepath))
 
     file_list_new = filter(filter_file_type, file_list)
 

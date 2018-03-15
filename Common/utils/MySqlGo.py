@@ -7,9 +7,9 @@ import pymysql
 # 禁用mysql做测试!
 class MySqlGo(object):
     MYSQL_HOST = "192.168.8.13"
-    MYSQL_DB_NAME = "haolie"
+    MYSQL_DB_NAME = "xxxxxxx.com"
     MYSQL_USER_NAME = "testing"
-    MYSQL_USER_PWD = "haolie123"
+    MYSQL_USER_PWD = "xxxxxxx.com123"
 
     db = pymysql.connect(MYSQL_HOST, MYSQL_USER_NAME, MYSQL_USER_PWD, MYSQL_DB_NAME)
 

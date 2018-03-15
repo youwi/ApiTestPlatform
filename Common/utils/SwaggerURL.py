@@ -4,10 +4,10 @@ import requests
 
 
 class SwaggerURL(object):
-    URL_XAUTH_CW = 'http://cw.lieluobo.testing/api/biz/account/xauth'
-    URL_XAUTH_HR = 'http://www.lieluobo.testing/api/biz/account/xauth'
-    URL_XAUTH_C = 'http://www.lieluobo.testing/api/biz/account/xauth'
-    URL_XAUTH_CRM = 'http://crm.lieluobo.testing/api/biz/account/xauth'
+    URL_XAUTH_CW = 'http://cw.xxxxxxx.com/api/biz/account/xauth'
+    URL_XAUTH_HR = 'http://www.xxxxxxx.com/api/biz/account/xauth'
+    URL_XAUTH_C = 'http://www.xxxxxxx.com/api/biz/account/xauth'
+    URL_XAUTH_CRM = 'http://crm.xxxxxxx.com/api/biz/account/xauth'
 
     URL_COUNT = {}
     LAST_URL = ""
@@ -41,7 +41,7 @@ class SwaggerURL(object):
            http://abc.com/abc?abc  ->http://abc.com/abc
            http://abc.com/abc/123?abc  ->http://abc.com/abc/{id}
            http://abc.com/abc/123?abc  ->http://abc.com/abc/{id}
-           http://hr.lieluobo.testing/20171117/event-->http://hr.lieluobo.testing/{id}/event
+           http://hr.xxxxxxx.com/20171117/event-->http://hr.xxxxxxx.com/{id}/event
            """
         # TODO
         if url is None:
@@ -85,10 +85,10 @@ class SwaggerURL(object):
         uc_c_new = {}
         uc_hr_new = {}
 
-        key_c = "http://www.lieluobo.testing/api/biz"
-        key_crm = "http://crm.lieluobo.testing/api/biz"
-        key_cw = "http://crm.lieluobo.testing/api/biz"
-        key_hr = "http://crm.lieluobo.testing/api/biz"
+        key_c = "http://www.xxxxxxx.com/api/biz"
+        key_crm = "http://crm.xxxxxxx.com/api/biz"
+        key_cw = "http://crm.xxxxxxx.com/api/biz"
+        key_hr = "http://crm.xxxxxxx.com/api/biz"
         key_http = "http://"
 
         for (key, value) in SwaggerURL.URL_COUNT.items():

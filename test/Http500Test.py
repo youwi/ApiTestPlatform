@@ -11,7 +11,7 @@ class Http500Test(TestCase):
     def test_daa():
         # 401
         try:
-            resp = HttpClient.client.post("http://www.lieluobo.testing/api/biz/todo", json={}, headers={})
+            resp = HttpClient.client.post("http://www.xxxxxxx.com/api/biz/todo", json={}, headers={})
             Assertion.check(resp)
             json = resp.json()
         except Exception:
@@ -23,7 +23,7 @@ class Http500Test(TestCase):
     def test_404():
         # 404
         try:
-            resp = HttpClient.client.post("http://www.lieluobo.testing/api/biz/todo2", json={}, headers={})
+            resp = HttpClient.client.post("http://www.xxxxxxx.com/api/biz/todo2", json={}, headers={})
             Assertion.check(resp)
         except Exception:
             return True

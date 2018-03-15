@@ -6,7 +6,7 @@ from locust import HttpLocust, TaskSet, task
 
 sys.path.extend([os.getcwd()])
 
-from Common.DataMaker import DataMaker
+from Common.utils.DataMaker import DataMaker
 
 
 class TidTest(TaskSet):

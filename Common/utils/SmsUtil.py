@@ -18,6 +18,6 @@ class SmsUtil(object):
         # // VC_DRAW_APPLY = 11; // 申请提现验证码
         # google.protobuf.Int32Value
         # smsOp = 2;
-        json = GET("www.lieluobo.testing/api/c/verifyCode", {"mobile": mobile, "smsOp": option})
+        json = GET("www.xxxxxxx.com/api/c/verifyCode", {"mobile": mobile, "smsOp": option})
         return json['body']
 

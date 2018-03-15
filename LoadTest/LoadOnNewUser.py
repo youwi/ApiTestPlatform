@@ -3,10 +3,10 @@ import sys
 
 from locust import HttpLocust, TaskSet, task
 
-from Common.LoginGo import LoginGo
+from Common.utils.LoginGo import LoginGo
 
 sys.path.extend([os.getcwd()])
-from Common.HttpClient import HttpClient
+from Common.utils.HttpClient import HttpClient
 
 """
 这是一个示例
@@ -20,14 +20,14 @@ class LoadOnNewUserTest(TaskSet):
 
     @task(3)
     def to_py_test(self):
-        return
+        TodoTest.test_get_todo_list()
 
     # 用新账号账号登陆
     @staticmethod
     def login18912345678():
         userName = {"mobile": "18912345678", "channel": "c", "password": "123456"}
-        headers = {'author': '11', 'authorization': 'null'}
-        from TestSuites import URL_XAUTH_C
+        headers = {'author': 'llbc', 'authorization': 'null'}
+        from Suites import URL_XAUTH_C
         out = HttpClient.client.post(URL_XAUTH_C, json=userName, headers=headers).json()
         headers['authorization'] = out['body']
         return headers
@@ -36,6 +36,7 @@ class LoadOnNewUserTest(TaskSet):
         # 使用性能测试的http测试工具,它已经封装了工具
         HttpClient.client = self.client
         # 一开始就覆盖内置账号的登陆信息!
+        LoginGo.CACHE_19900030001 = LoadOnNewUserTest.login18912345678()
 
 
 class WebsiteUser(HttpLocust):

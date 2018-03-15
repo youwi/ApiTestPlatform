@@ -22,7 +22,7 @@ class UploadFile(object):
     def upload_to_internal(self, base_url, data_path):
         """
         上传至运维的服务器
-        url是 file.lieluobo 开头
+        url是 file.xxxxxxx.com 开头
         """
         url = URL_FILE_UPLOAD + Swagger("")
         file = open(data_path, "rb")

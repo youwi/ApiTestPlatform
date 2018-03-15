@@ -12,7 +12,7 @@
         "time": 645.7931809742586,
         "request": {
           "method": "POST",
-          "url": "http://bi.api.lieluobo.testing/action",
+          "url": "http://bi.api.xxxxxxx.com/action",
           "httpVersion": "HTTP/1.1",
           "headers": [
             {
@@ -21,7 +21,7 @@
             },
             {
               "name": "Origin",
-              "value": "http://www.lieluobo.testing"
+              "value": "http://www.xxxxxxx.com"
             },
             {
               "name": "Accept-Encoding",
@@ -29,7 +29,7 @@
             },
             {
               "name": "Host",
-              "value": "bi.api.lieluobo.testing"
+              "value": "bi.api.xxxxxxx.com"
             },
             {
               "name": "Accept-Language",
@@ -53,7 +53,7 @@
             },
             {
               "name": "Referer",
-              "value": "http://www.lieluobo.testing/resumes"
+              "value": "http://www.xxxxxxx.com/resumes"
             },
             {
               "name": "Connection",
@@ -70,7 +70,7 @@
           "bodySize": 382,
           "postData": {
             "mimeType": "text/plain",
-            "text": "[{\"action\":\"click_c_resume_group_all\",\"actionName\":\"点击我的候选人\",\"type\":\"click\",\"userId\":204641,\"path\":\"/resumes\",\"title\":\"我的候选人\",\"channel\":\"c\",\"url\":\"http://www.lieluobo.testing/resumes\",\"timeAt\":1516257045108,\"version\":\"2.6.0\",\"deviceId\":\"1da7329f-1aeb-18f1-bc8d-a22d19c8b476\",\"sessionId\":\"91e9f72b-2b9a-91b7-530e-51e1b3950c22\",\"content\":\"{}\",\"module\":\"Resumes\",\"moduleName\":\"我的候选人\"}]"
+            "text": "[{\"action\":\"click_c_resume_group_all\",\"actionName\":\"点击我的候选人\",\"type\":\"click\",\"userId\":204641,\"path\":\"/resumes\",\"title\":\"我的候选人\",\"channel\":\"c\",\"url\":\"http://www.xxxxxxx.com/resumes\",\"timeAt\":1516257045108,\"version\":\"2.6.0\",\"deviceId\":\"1da7329f-1aeb-18f1-bc8d-a22d19c8b476\",\"sessionId\":\"91e9f72b-2b9a-91b7-530e-51e1b3950c22\",\"content\":\"{}\",\"module\":\"Resumes\",\"moduleName\":\"我的候选人\"}]"
           }
         },
         "response": {
@@ -135,12 +135,12 @@
         "time": 1052.4572449601255,
         "request": {
           "method": "POST",
-          "url": "http://www.lieluobo.testing/api/biz/resume/search?_=1516257045107",
+          "url": "http://www.xxxxxxx.com/api/biz/resume/search?_=1516257045107",
           "httpVersion": "HTTP/1.1",
           "headers": [
             {
               "name": "Origin",
-              "value": "http://www.lieluobo.testing"
+              "value": "http://www.xxxxxxx.com"
             },
             {
               "name": "Accept-Encoding",
@@ -180,7 +180,7 @@
             },
             {
               "name": "Host",
-              "value": "www.lieluobo.testing"
+              "value": "www.xxxxxxx.com"
             },
             {
               "name": "author",
@@ -208,7 +208,7 @@
             },
             {
               "name": "Referer",
-              "value": "http://www.lieluobo.testing/resumes"
+              "value": "http://www.xxxxxxx.com/resumes"
             },
             {
               "name": "X-B3-Sampled",
@@ -331,12 +331,12 @@
         "time": 4656.747554979462,
         "request": {
           "method": "POST",
-          "url": "http://www.lieluobo.testing/api/biz/project/recommendProjectsMetaInfo?_=1516257046289",
+          "url": "http://www.xxxxxxx.com/api/biz/project/recommendProjectsMetaInfo?_=1516257046289",
           "httpVersion": "HTTP/1.1",
           "headers": [
             {
               "name": "Origin",
-              "value": "http://www.lieluobo.testing"
+              "value": "http://www.xxxxxxx.com"
             },
             {
               "name": "Accept-Encoding",
@@ -376,7 +376,7 @@
             },
             {
               "name": "Host",
-              "value": "www.lieluobo.testing"
+              "value": "www.xxxxxxx.com"
             },
             {
               "name": "author",
@@ -404,7 +404,7 @@
             },
             {
               "name": "Referer",
-              "value": "http://www.lieluobo.testing/resumes"
+              "value": "http://www.xxxxxxx.com/resumes"
             },
             {
               "name": "X-B3-Sampled",
@@ -519,7 +519,7 @@
         "time": 611.233502981835,
         "request": {
           "method": "OPTIONS",
-          "url": "https://tracing.lieluobo.com/api/v1/spans",
+          "url": "https://tracing.xxxxxxx.com/api/v1/spans",
           "httpVersion": "HTTP/1.1",
           "headers": [
             {
@@ -532,7 +532,7 @@
             },
             {
               "name": "Origin",
-              "value": "http://www.lieluobo.testing"
+              "value": "http://www.xxxxxxx.com"
             },
             {
               "name": "Accept-Encoding",
@@ -540,7 +540,7 @@
             },
             {
               "name": "Host",
-              "value": "tracing.lieluobo.com"
+              "value": "tracing.xxxxxxx.com"
             },
             {
               "name": "Accept-Language",
@@ -560,7 +560,7 @@
             },
             {
               "name": "Referer",
-              "value": "http://www.lieluobo.testing/resumes"
+              "value": "http://www.xxxxxxx.com/resumes"
             },
             {
               "name": "Connection",
@@ -599,7 +599,7 @@
             },
             {
               "name": "Access-Control-Allow-Origin",
-              "value": "http://www.lieluobo.testing"
+              "value": "http://www.xxxxxxx.com"
             },
             {
               "name": "Access-Control-Allow-Credentials",
@@ -654,7 +654,7 @@
         "time": 522.2315209885128,
         "request": {
           "method": "POST",
-          "url": "https://tracing.lieluobo.com/api/v1/spans",
+          "url": "https://tracing.xxxxxxx.com/api/v1/spans",
           "httpVersion": "HTTP/1.1",
           "headers": [
             {
@@ -663,7 +663,7 @@
             },
             {
               "name": "Origin",
-              "value": "http://www.lieluobo.testing"
+              "value": "http://www.xxxxxxx.com"
             },
             {
               "name": "Accept-Encoding",
@@ -671,7 +671,7 @@
             },
             {
               "name": "Host",
-              "value": "tracing.lieluobo.com"
+              "value": "tracing.xxxxxxx.com"
             },
             {
               "name": "Accept-Language",
@@ -695,7 +695,7 @@
             },
             {
               "name": "Referer",
-              "value": "http://www.lieluobo.testing/resumes"
+              "value": "http://www.xxxxxxx.com/resumes"
             },
             {
               "name": "Connection",
@@ -722,7 +722,7 @@
           "headers": [
             {
               "name": "Access-Control-Allow-Origin",
-              "value": "http://www.lieluobo.testing"
+              "value": "http://www.xxxxxxx.com"
             },
             {
               "name": "Date",
@@ -781,7 +781,7 @@
         "time": 488.8189459911082,
         "request": {
           "method": "OPTIONS",
-          "url": "https://tracing.lieluobo.com/api/v1/spans",
+          "url": "https://tracing.xxxxxxx.com/api/v1/spans",
           "httpVersion": "HTTP/1.1",
           "headers": [
             {
@@ -794,7 +794,7 @@
             },
             {
               "name": "Origin",
-              "value": "http://www.lieluobo.testing"
+              "value": "http://www.xxxxxxx.com"
             },
             {
               "name": "Accept-Encoding",
@@ -802,7 +802,7 @@
             },
             {
               "name": "Host",
-              "value": "tracing.lieluobo.com"
+              "value": "tracing.xxxxxxx.com"
             },
             {
               "name": "Accept-Language",
@@ -822,7 +822,7 @@
             },
             {
               "name": "Referer",
-              "value": "http://www.lieluobo.testing/resumes"
+              "value": "http://www.xxxxxxx.com/resumes"
             },
             {
               "name": "Connection",
@@ -861,7 +861,7 @@
             },
             {
               "name": "Access-Control-Allow-Origin",
-              "value": "http://www.lieluobo.testing"
+              "value": "http://www.xxxxxxx.com"
             },
             {
               "name": "Access-Control-Allow-Credentials",
@@ -916,7 +916,7 @@
         "time": 424.9851170197362,
         "request": {
           "method": "POST",
-          "url": "https://tracing.lieluobo.com/api/v1/spans",
+          "url": "https://tracing.xxxxxxx.com/api/v1/spans",
           "httpVersion": "HTTP/1.1",
           "headers": [
             {
@@ -925,7 +925,7 @@
             },
             {
               "name": "Origin",
-              "value": "http://www.lieluobo.testing"
+              "value": "http://www.xxxxxxx.com"
             },
             {
               "name": "Accept-Encoding",
@@ -933,7 +933,7 @@
             },
             {
               "name": "Host",
-              "value": "tracing.lieluobo.com"
+              "value": "tracing.xxxxxxx.com"
             },
             {
               "name": "Accept-Language",
@@ -957,7 +957,7 @@
             },
             {
               "name": "Referer",
-              "value": "http://www.lieluobo.testing/resumes"
+              "value": "http://www.xxxxxxx.com/resumes"
             },
             {
               "name": "Connection",
@@ -984,7 +984,7 @@
           "headers": [
             {
               "name": "Access-Control-Allow-Origin",
-              "value": "http://www.lieluobo.testing"
+              "value": "http://www.xxxxxxx.com"
             },
             {
               "name": "Date",
